@@ -26,7 +26,9 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: tdBGColor,
-      appBar: _buildAppBar(),
+      appBar: AppBar(
+        backgroundColor: Color(0xFF5F52EE),
+        title: Text("Clicks"),),
       body: Stack(
         children: [
           Container(
@@ -42,11 +44,11 @@ class _HomeState extends State<Home> {
                     children: [
                       Container(
                         margin: EdgeInsets.only(
-                          top: 50,
+                          top: 20,
                           bottom: 20,
                         ),
                         child: Text(
-                          'All ToDos',
+                          'Clicks',
                           style: TextStyle(
                             fontSize: 30,
                             fontWeight: FontWeight.w500,
@@ -169,6 +171,7 @@ class _HomeState extends State<Home> {
 
   Widget searchBox() {
     return Container(
+     
       padding: EdgeInsets.symmetric(horizontal: 15),
       decoration: BoxDecoration(
         color: Colors.white,
